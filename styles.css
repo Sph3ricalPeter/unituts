@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap");
+
+html {
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+header nav a {
+  margin-left: 1rem;
+}
+
+header img {
+  width: 150px;
+}
+
+section {
+  padding: 1rem;
+}
+
+a {
+  color: rgb(0, 150, 255);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+a:visited {
+  color: rgb(0, 150, 255);
+}
+
+a:hover {
+  color: black;
+}
+
+a.active {
+  color: black;
+}
+
+a.active::before {
+  content: "> ";
+}
+
+article a::after {
+  content: " >";
+}
+
+p {
+  padding: 0 0.5rem;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 2rem 1rem;
+}
+
+code {
+  font-family: "Jetbrains Mono";
+  background-color: #ccc;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#hero {
+  padding: 3rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+#hero h1 {
+  color: #666;
+  font-style: italic;
+}
+
+section.two-col {
+  display: flex;
+}
+
+section.two-col > article {
+  flex: 1
+}

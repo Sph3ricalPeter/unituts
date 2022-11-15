@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Introduction and beginner tutorials for the Unity Game Engine"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>UniTuts - Creating your first game</title>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo192.png" alt="UniTuts" />
+      <nav>
+        <a href="../">Intro</a>
+        <a href="unity.html">What is Unity</a>
+        <a href="start.html">Getting started</a>
+        <a href="firstgame.html" class="active">First Game</a>
+        <a href="suggestions.html">Suggestions</a>
+      </nav>
+    </header>
+    <section>
+      <article>
+        <h3>Creating your first game</h3>
+        <p>
+          It's time to make our first game. Unfortunately, I'm here to tell you
+          that it's not an open world massively multiplayer online survival
+          roleplaying game. Instead, we're going to make an autoclicker. Know
+          that game called Cookie Clicker? Yeah ... We're going to make
+          something similar.
+        </p>
+        <p>
+          The good news is, everyone has to start somewhere and the things you
+          learn here will kick off your journey into game development. Let's get
+          started!
+        </p>
+        <h4>Creating a project</h4>
+        <p>
+          We will start by opening Unity Hub and creating a new project. Unity
+          version doesn't matter too much, so just pick whatever is suggested to
+          you.
+        </p>
+        <h4>Setting default code editor</h4>
+        <p>
+          Once the project is created, you will see the default Unity editor UI.
+          It's easy to get overwhelmed, but hang in there ... We will only be
+          working with the following panels for now: the Scene, the Game view,
+          the Inspector, the Hierarchy panel, the Project panel and the Console.
+        </p>
+        <p>
+          Before we do anything, it will be useful to tell Unity to use VS Code
+          as the go-to code editor.
+        </p>
+        <ul>
+          <li>go to the top navigation of the editor window</li>
+          <li>select "Windows"</li>
+          <li>select "Preferences"</li>
+          <li>in the preferences window, go to "External Tools"</li>
+          <li>
+            in the external code editor, select "VS Code" from the dropdown
+          </li>
+        </ul>
+        <p>
+          To test our changes, we will go to the Project panel, rightclick the
+          Assets folder and create a new C# script. Unity will create a new
+          script file in the C# language, which we will use to make our
+          autoclicker game. You can name this file "MyClicker". To open it,
+          simple double click it. The file should open in VS Code.
+        </p>
+        <h4>Writing our first game loop</h4>
+        <p>
+          We will begin writing our game. In the file we just opened, you can
+          see 2 blocks of code - Start and Update. These are called methods.
+          They are part a class named after the file it's defined in.
+        </p>
+        <h4>Start</h4>
+        <p>
+          Start is a method, which is called when the game starts. This means
+          that the code we write here will only happen once. We will begin by
+          creating a variable, which will track our clicks. We will name it
+          "counter". In the start method, we will set its value to 0.
+        </p>
+        <h4>Update</h4>
+        <p>
+          The Update method is called every frame. This can be used to do
+          something repeatedly. We will use the Update method to check for
+          player input. If the player clicks the left mouse button, we will
+          increment the counter. To display that the counter updated, we will
+          use the console. Unity provides a simple way to log to the console via
+          the <code>Debug.Log()</code> method.
+        </p>
+        <h4>Using our script</h4>
+        <p>
+          We should now have a working script. To test it out, we need to attach
+          it to a Unity game object. We can do this in the Hierarchy panel.
+          Create a new GameObject with a right click. Select it and you will see
+          its properties in the Inspector panel. Drag and drop our script from
+          the Project panel into the inspector. The script should be added to
+          the object.
+        </p>
+        <h4>Playtesting our game</h4>
+        <p>
+          To play the game, simply click the play button at the top of the
+          editor view. Once the game loads, the play button will be colored
+          blue. Now if you click with the left mouse button, a message in the
+          console should appear with an incremented counter.
+        </p>
+        <p>
+          That's it! You made it! If you'd like to continue on your gamedev
+          journey, I have some <a href="suggestions">tips</a> for you.
+        </p>
+        <p>
+          If not, don't worry. Game dev isn't for everyone. Good job for making it
+          this far! <b>You rock!</b>
+        </p>
+      </article>
+    </section>
+    <footer>
+      Made with &#9749; by
+      <a href="https://github.com/Sph3ricalPeter/unituts">Peter J.</a>
+    </footer>
+  </body>
+</html>

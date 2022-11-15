@@ -1,2 +1,7 @@
-# unituts
-Introduction and beginner tutorials for the Unity Game Engine
+# UniTuts
+
+## Introduction and beginner tutorials for the Unity Game Engine
+
+A site with short-form tutorials for the Unity Game Engine
+with a focus on beginners and people just wanting to get into game
+development.
