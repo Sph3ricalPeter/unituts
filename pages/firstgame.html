@@ -28,20 +28,20 @@
       <p>
         It's time to make our first game. Unfortunately, I'm here to tell you
         that it's not an open world massively multiplayer online survival
-        roleplaying game. Instead, we're going to make an autoclicker. Know
+        roleplaying game. Instead, we're going to make a simple clicker game. Know
         that game called Cookie Clicker? Yeah ... We're going to make
         something similar.
       </p>
       <p>
-        The good news is, everyone has to start somewhere and the things you
+        You may be a little disappointed but the good news is, everyone has to start somewhere and the things you
         learn here will kick off your journey into game development. Let's get
         started!
       </p>
       <h4>Creating a project</h4>
       <p>
-        We will start by opening Unity Hub and creating a new project. Unity
+        The first time you open the Unity Hub, you will be asked to sign in and download the editor. The editor's
         version doesn't matter too much, so just pick whatever is suggested to
-        you.
+        you. Once you have the editor downloaded, you can create a new 2D project. You can call it 'MyClicker'.
       </p>
       <figure>
         <img src="../img/articles/fg_createProject.png" alt="Creating a new 2D project via the Unity Hub" />
@@ -80,7 +80,7 @@
         Assets folder and create a new C# script. Unity will create a new
         script file in the C# language, which we will use to make our
         clicker game. You can name this file "MyClicker". To open it,
-        simple double click it. The file should open in VS Code.
+        simply double click it. The file should open in VS Code.
       </p>
       <figure>
         <img src="../img/articles/fg_newScript.png" alt="New script MyClicker opened in VS Code" />
@@ -97,14 +97,14 @@
       <h4>Start</h4>
       <p>
         Start is a method, which is called when the game starts. This means
-        that the code we write here will only happen once. We will begin by
+        that the code we write here will only be executed once. We will begin by
         creating a variable, which will track our clicks. We will name it
         "counter". In the start method, we will set its value to 0.
       </p>
       <figure>
         <img src="../img/articles/fg_newVariable.png" alt="New 'counter' variable being set in the Start method" />
         <figcaption>
-          4. New script MyClicker opened in VS Code
+          4. New 'counter' variable being set in the Start method
         </figcaption>
       </figure>
       <h4>Update</h4>
@@ -112,12 +112,13 @@
         The Update method is called every frame. This can be used to do
         something repeatedly. We will use the Update method to check for
         player input. If the player clicks the left mouse button, we will
-        increment the counter. To display that the counter updated, we will
+        increment the counter by one. To display that the counter updated, we will
         use the console. Unity provides a simple way to log to the console via
         the <code>Debug.Log()</code> method.
       </p>
       <figure>
-        <img src="../img/articles/fg_finishClicker.png" alt="Incrementing counter and logging its value on mouse left click" />
+        <img src="../img/articles/fg_finishClicker.png"
+          alt="Incrementing counter and logging its value on mouse left click" />
         <figcaption>
           5. Incrementing counter and logging its value on mouse left click
         </figcaption>
@@ -128,20 +129,20 @@
         it to a Unity game object. We can do this in the Hierarchy panel.
         Create a new GameObject with a right click. Select it and you will see
         its properties in the Inspector panel. Drag and drop our script from
-        the Project panel into the inspector. The script should be added to
+        the Project panel onto the Inspector panel. The script should be added to
         the object.
       </p>
       <figure>
         <img src="../img/articles/fg_scriptAttached.png" alt="Attached 'MyClicker' script to the new GameObject" />
         <figcaption>
-          6. Attached 'MyClicker' script to the new GameObject
+          6. 'MyClicker' script is attached to the new GameObject
         </figcaption>
       </figure>
       <h4>Playtesting our game</h4>
       <p>
         To play the game, simply click the play button at the top of the
         editor view. Once the game loads, the play button will be colored
-        blue. Now if you click with the left mouse button, a message in the
+        blue. Now, if you click with the left mouse button, a message in the
         console should appear with an incremented counter.
       </p>
       <figure>
