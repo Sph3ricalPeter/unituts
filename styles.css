@@ -2,11 +2,14 @@
 
 html {
   font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   max-width: 1000px;
-  margin: 0 auto;
   min-height: 100%;
 }
 
@@ -40,7 +43,8 @@ a {
   color: rgb(0, 150, 255);
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 a:visited {
@@ -79,6 +83,53 @@ code {
   border-radius: 0.5rem;
 }
 
+img {
+  border-radius: 0.5rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+article.img-row figure img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+article figure {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+
+article figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+section.two-col {
+  display: flex;
+}
+
+section.two-col > article {
+  flex: 1;
+}
+
+article.img-row {
+  display: flex;
+}
+
+article.img-row figure {
+  flex: 1;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
 #hero {
   padding: 3rem;
   padding-top: 5rem;
@@ -90,10 +141,12 @@ code {
   font-style: italic;
 }
 
-section.two-col {
-  display: flex;
-}
+@media print {
+  header {
+    display: none;
+  }
 
-section.two-col > article {
-  flex: 1
+  footer {
+    display: none;
+  }
 }
