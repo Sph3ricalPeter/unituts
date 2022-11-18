@@ -24,4 +24,4 @@
       pro splnění tohoto bodu musí web obsahovat alespoň nějaké obrázky
 - [x] stránky mají uvedeny nezbytné meta informace a favicon
 - [x] web je zobrazitelný i při rozlišení 800x600, všechny důležité informace nad přehybem (tj. v celém tomto prostoru nebude jen fotka…)
-- [ ] web neobsahuje jiné chyby
+- [x] web neobsahuje jiné chyby
